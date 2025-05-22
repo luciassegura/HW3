@@ -22,7 +22,7 @@ Presion::Presion(float p, float q, float t)
 void Presion::serializar(ofstream& out){
     out.write(reinterpret_cast<char*>(&presionEstatica), sizeof(presionEstatica));
     out.write(reinterpret_cast<char*>(&presionDinamica), sizeof(presionDinamica));
-    out.write(reinterpret_cast<char*>(tiempoMedicion.get()), sizeof(float)); // es lo mismo poner getTiempo()
+    out.write(reinterpret_cast<char*>(tiempoMedicion.get()), sizeof(float)); 
 }
 
 void Presion::deserializar(ifstream& in){
