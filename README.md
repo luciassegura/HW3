@@ -3,6 +3,7 @@ Indicaciones para compilar y ejecutar
 Ejercicio 1
 
 g++ -std=c++17 -Wall -Wextra "Ejercicio 1/ej1.cpp" "Ejercicio 1/main1.cpp" -o ej1 
+./ej1
 
 Ejercicio 2
 
