@@ -1,8 +1,8 @@
 #include "ej3.h"
 
 void Clase2::asociar_doubles(const string& etiqueta, const vector<double>& v){
-    etiqueta_doubles = etiqueta;
-    vec_doubles = &v;
+    etiqueta_doubles = etiqueta;  // la etiqueta que paso en el main es la que se guarda como atributo
+    vec_doubles = &v;             // el vector lo consigo usando la clase 1
 }
 
 void Clase2::asociar_palabras(const string& etiqueta, const vector<string>& p){
@@ -49,7 +49,7 @@ string Clase2::construir_json_string() const{
 
     oss << "}" << endl;
 
-    return oss.str();
+    return oss.str();       // este string es el que se imprime y el que uso para guardar en el archivo
 }
 
 void Clase2::guardar_json_archivo() const{

@@ -23,7 +23,7 @@ int main(){
     c2.asociar_listas("listas", obj3.obtener_listas());
 
     c2.guardar_json_archivo();
-    cout << c2.construir_json_string();
+    cout << c2.construir_json_string();   // imprimir json
 
     return 0;
 }
