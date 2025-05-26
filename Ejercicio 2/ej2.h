@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-#include <cmath>
+#include <cmath>  // para usar M_PI
 
 using namespace std;
 
@@ -63,7 +63,7 @@ class Rectangulo{
         void setLargo(float nuevo_largo);
 };
 
-template <typename T>
+template <typename T>       // como la clase está usanod un template hay que implementarla en el .h
 class ProcesadorFigura{
 public:
     double calcularArea(const T&){
