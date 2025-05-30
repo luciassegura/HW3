@@ -18,9 +18,9 @@ int main(){
 
     // crear Clase2 y asociar datos
     Clase2 c2;
-    c2.asociar_doubles("vec_doubles", obj1.obtener_doubles());
-    c2.asociar_palabras("palabras", obj2.obtener_palabras());
-    c2.asociar_listas("listas", obj3.obtener_listas());
+    c2.asociar_doubles("vec_doubles", obj1.obtener_vec());
+    c2.asociar_palabras("palabras", obj2.obtener_vec());
+    c2.asociar_listas("listas", obj3.obtener_vec());
 
     c2.guardar_json_archivo();
     cout << c2.construir_json_string();   // imprimir json
